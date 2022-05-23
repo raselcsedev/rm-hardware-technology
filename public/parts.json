@@ -1,83 +1,74 @@
 [
     {
         "id": 1,
-        "name": "SAMSUNG 192 L 4 STAR REFRIGERATOR",
-        "price": "30000",
+        "name": "Parking Air Heater Spare",
+        "price": "150",
         "orderQuantity":"100",
         "quantity":"505",
-        "description": "Refrigerators have become a must in the modern kitchen as they make the storage of items like dairy products, vegetables, fruits, cold drinks, and beverages easy and convenient. ",
-        "img": "https://static.digit.in/default/a792acda81ddfaca5b934c7cdea205a7b17d816e.jpeg?tr=w-1200"
+        "description": "The atomized diesel fuel enters the combustion chamber and mixes with the air. It is ignited by the hot ignition plug. After being fully burned in the combustion chamber, it turns back and transfers the heat to the corresponding medium to achieve the purpose of heating.",
+        "img": "https://sc04.alicdn.com/kf/H07fd689b1a9740aa847e53b0dab6f142G/222084827/H07fd689b1a9740aa847e53b0dab6f142G.jpg"
     },
     {
         "id": 2,
-        "name": "Toshiba 40 LED television",
-        "price": "40100",
+        "name": "Truck Nox Sensor",
+        "price": "200",
         "orderQuantity":"100",
         "quantity":"550",
-        "description": "Screen Size: 40, Resolution: 1920 x 1080, The TV has an ambient light sensor to set appropriate brightness levels depending on ambient lighting ...",
-        "img": "https://www.bestelectronicsltd.com/wp-content/uploads/2017/11/Toshiba-40%E2%80%B3-Series-37L3750VE-Full-HD-LED-LCD-Television.png"
+        "description": "The NOx sensor is part of the NOx reduction aftertreatment system used in diesel vehicles with urea based SCR systems. The sensor located upstream of the SCR catalyst directly measures the engine-out NOx gas concentration, which helps determine the optimum amount of urea injection.",
+        "img": "https://oemember.com/uploadfile/2019/10/08/20191008181742cs0NtI.jpg"
     },
     {
         "id": 3,
-        "name": "Blenders",
-        "price": "4100",
+        "name": "Suspension Control Arm",
+        "price": "400",
         "orderQuantity":"100",
         "quantity":"900",
-        "description": "Blenders can pure vegetables into soup, crush nuts into butter, whir dressings and sauces into silky emulsifications, chop ingredients into salsas, and, of course, make smoothies. ",
-        "img": "https://pyxis.nymag.com/v1/imgs/777/f2c/7c27d8ed120befcbe8a2e09b75c10638e5-24-blender.jpg"
+        "description": "The control arms are one of the core components of a suspension system and serve as the direct connection points between the front wheel assemblies and the vehicle's frame. The control arms allow a driver to steer a car while also guiding the wheels up and down with the road surface.",
+        "img": "https://m.media-amazon.com/images/I/61SwaFu4rPL._AC_SS450_.jpg"
     },
     {
         "id": 4,
-        "name": "Iron",
-        "price": "1500",
+        "name": "Seal Gasket",
+        "price": "200",
         "orderQuantity":"100",
         "quantity":"800",
-        "description": "Dry and Steam ironing function.Non-stick Teflon Coated soleplate.Operating Voltage: 220-240VAc, 50Hz Rated Power: 1200W.",
-        "img": "https://blogmedia.tjmpromos.com/116/conversions/HowToIronOnPatchCC4L-e1502981438308-responsive.jpg"
+        "description": "Gaskets seal a connection between two components or flanges that have flat surfaces, while seals are used between engine parts, pumps, and shafts that rotate. Gaskets are used wherever a union or flange is required to prevent leaking. Gaskets are most commonly used as static seals.",
+        "img": "https://latty.com/wp-content/uploads/2019/07/2320LATTYcarb96G2F.jpg"
     },
     {
         "id": 5,
-        "name": "Gas Stove",
+        "name": "Oil Pan ",
         "price": "4500",
         "orderQuantity":"100",
         "quantity":"500",
-        "description": "Meet All Cooking Needs:This gas cooktop provides 5 different versatile burner sizes ,a triple ring 11262BTU burner, one semi-rapid 9385BTU , two ...",
-        "img": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFZYSt4cjhjK0wuX0FDX1NMMTUwMF8uanBn.jpg"
+        "description": "The oil pan is attached to the bottom of the engine with bolts and is the reservoir for oil that gets pumped throughout the engine to lubricate, clean and cool moving parts. A pump forces the oil from the pan through a filter to remove dirt and other debris before it circulates through the engine.",
+        "img": "https://i0.wp.com/studentlesson.com/wp-content/uploads/2020/07/engine-oil-pan.jpg?fit=988%2C733&ssl=1"
     },
     {
         "id": 6,
-        "name": "Washing Machine",
-        "price": "30000",
+        "name": "Aluminum Alloy Precision",
+        "price": "3000",
         "orderQuantity":"100",
         "quantity":"400",
-        "description": "Buy LG FHV1408ZWB 8 kg with 6 Motion DD technology that provides optimized motion combinations for each fabric type delievering powerful washing ...",
-        "img": "https://www.lg.com/in/images/washing-machines/md07518535/gallery/FHV1408ZWB-Washing-Machines-Left-View-Open-D-07.jpg"
+        "description": "The most versatile of the heat-treatable aluminum alloys, while keeping most of the good qualities of aluminum. This grade has a great range of mechanical properties and corrosion resistance. It can be fabricated by most of the commonly used techniques and it has good workability in the annealed condition.",
+        "img": "https://www.aluminumalloyplate.com/photo/ps23903157-precision_cnc_machine_parts_aluminum_alloy_parts_of_aluminium_fabrications.jpg"
     },
     {
         "id": 7,
-        "name": "Electric Kettle",
+        "name": "Brass Metal CNC",
         "price": "3500",
         "orderQuantity":"100",
         "quantity":"900",
-        "description": "The best electric kettles come with serious perks for the committed coffee or tea drinkers: They boil water nearly twice as fast as conventional kettles...",
-        "img": "https://assets.epicurious.com/photos/609e9d9848cd17a4fcdbf149/16:9/w_2560%2Cc_limit/The-Best-Electric-Kettle-11042018_V1.jpg"
+        "description": "Brass is one of the easiest materials to machine. While many consider free machining steels the comparison baseline for machinability, brass alloys generally have better machinability. The strength and hardness properties of brass are also useful for a wide range of applications.",
+        "img": "https://cdn.goodao.net/steel-foundry/Brass-Machining-Part-1.jpg"
     },
     {
         "id": 8,
-        "name": "Hand Mixer",
+        "name": "Ball Screw",
         "price": "1700",
         "orderQuantity":"100",
         "quantity":"700",
-        "description": "uka membuat kue di rumah? Berarti Anda sudah akrab, dong, dengan mixer. Benda ini memungkinkan siapa saja mengaduk berbagai bahan hingga membentuk adonan sesuai kecepatan yang ditentukan.",
-        "img": "https://www.electrolux.co.id/globalassets/5-support/blog-id/37.jpg"
-    },
-    {
-        "id": 9,
-        "name": "Rice Cooker",
-        "price": "2800",
-        "orderQuantity":"100",
-        "quantity":"600",
-        "description": "About this item Colour: Red Capacity: 2.7 L Material: Steel Included Components: Electric Cooker, Cooking Pan, Lid, User Manual And Warranty Card | Special Features: Automatic Cut Off Warranty: 1 Year.",
-        "img": "https://m.media-amazon.com/images/I/61SWP8vYgKL.jpg"
+        "description": "Ball screws are mechanical linear actuators that consist of a screw shaft and a nut that contain a ball that rolls between their matching helical grooves. The primary function of ball screws is to convert rotational motion to linear motion.",
+        "img": "https://3.imimg.com/data3/ES/FO/MY-4179111/ball-screw-500x500.jpg"
     }
 ]

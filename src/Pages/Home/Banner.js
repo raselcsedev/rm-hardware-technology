@@ -5,16 +5,16 @@ const Banner = () => {
         <div>
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=8B7BCDC2" className="w-full" alt="" />
+                    <img src="https://w7.pngwing.com/pngs/1009/41/png-transparent-automotive-engine-parts-automotive-engine-parts-car-parts-auto-parts.png" style={{height:'450px', width:'1000px'}} className="w-full mx-auto" alt="" />
                 </div>
                 <div id="item2" className="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=500B67FB" className="w-full" alt="" />
+                    <img src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-a-set-of-motorcycle-parts-png-image_4173409.jpg" style={{height:'450px', width:'1000px'}} className="w-full mx-auto" alt="" />
                 </div>
                 <div id="item3" className="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=A89D0DE6" className="w-full" alt="" />
+                    <img src="https://c0.klipartz.com/pngpicture/530/606/gratis-png-partes-de-motor-automotriz.png" style={{height:'450px', width:'1000px'}} className="w-full mx-auto" alt="" />
                 </div>
                 <div id="item4" className="carousel-item w-full">
-                    <img src="https://api.lorem.space/image/car?w=800&h=200&hash=225E6693" className="w-full" alt="" />
+                    <img src="https://e7.pngegg.com/pngimages/630/798/png-clipart-vehicle-part-lot-illustration-car-brake-pad-tire-auto-parts-material-brakes-tires-happy-birthday-vector-images-motorcycle.png" style={{height:'450px', width:'1000px'}} className="w-full mx-auto" alt="" />
                 </div>
             </div>
             <div className="flex justify-center w-full py-2 gap-2">
