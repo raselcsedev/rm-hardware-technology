@@ -1,0 +1,83 @@
+[
+    {
+        "id": 1,
+        "name": "SAMSUNG 192 L 4 STAR REFRIGERATOR",
+        "price": "30000",
+        "orderQuantity":"100",
+        "quantity":"505",
+        "description": "Refrigerators have become a must in the modern kitchen as they make the storage of items like dairy products, vegetables, fruits, cold drinks, and beverages easy and convenient. ",
+        "img": "https://static.digit.in/default/a792acda81ddfaca5b934c7cdea205a7b17d816e.jpeg?tr=w-1200"
+    },
+    {
+        "id": 2,
+        "name": "Toshiba 40 LED television",
+        "price": "40100",
+        "orderQuantity":"100",
+        "quantity":"550",
+        "description": "Screen Size: 40, Resolution: 1920 x 1080, The TV has an ambient light sensor to set appropriate brightness levels depending on ambient lighting ...",
+        "img": "https://www.bestelectronicsltd.com/wp-content/uploads/2017/11/Toshiba-40%E2%80%B3-Series-37L3750VE-Full-HD-LED-LCD-Television.png"
+    },
+    {
+        "id": 3,
+        "name": "Blenders",
+        "price": "4100",
+        "orderQuantity":"100",
+        "quantity":"900",
+        "description": "Blenders can pure vegetables into soup, crush nuts into butter, whir dressings and sauces into silky emulsifications, chop ingredients into salsas, and, of course, make smoothies. ",
+        "img": "https://pyxis.nymag.com/v1/imgs/777/f2c/7c27d8ed120befcbe8a2e09b75c10638e5-24-blender.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Iron",
+        "price": "1500",
+        "orderQuantity":"100",
+        "quantity":"800",
+        "description": "Dry and Steam ironing function.Non-stick Teflon Coated soleplate.Operating Voltage: 220-240VAc, 50Hz Rated Power: 1200W.",
+        "img": "https://blogmedia.tjmpromos.com/116/conversions/HowToIronOnPatchCC4L-e1502981438308-responsive.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Gas Stove",
+        "price": "4500",
+        "orderQuantity":"100",
+        "quantity":"500",
+        "description": "Meet All Cooking Needs:This gas cooktop provides 5 different versatile burner sizes ,a triple ring 11262BTU burner, one semi-rapid 9385BTU , two ...",
+        "img": "https://www.ubuy.com.bd/productimg/?image=aHR0cHM6Ly9tLm1lZGlhLWFtYXpvbi5jb20vaW1hZ2VzL0kvNjFZYSt4cjhjK0wuX0FDX1NMMTUwMF8uanBn.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Washing Machine",
+        "price": "30000",
+        "orderQuantity":"100",
+        "quantity":"400",
+        "description": "Buy LG FHV1408ZWB 8 kg with 6 Motion DD technology that provides optimized motion combinations for each fabric type delievering powerful washing ...",
+        "img": "https://www.lg.com/in/images/washing-machines/md07518535/gallery/FHV1408ZWB-Washing-Machines-Left-View-Open-D-07.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Electric Kettle",
+        "price": "3500",
+        "orderQuantity":"100",
+        "quantity":"900",
+        "description": "The best electric kettles come with serious perks for the committed coffee or tea drinkers: They boil water nearly twice as fast as conventional kettles...",
+        "img": "https://assets.epicurious.com/photos/609e9d9848cd17a4fcdbf149/16:9/w_2560%2Cc_limit/The-Best-Electric-Kettle-11042018_V1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Hand Mixer",
+        "price": "1700",
+        "orderQuantity":"100",
+        "quantity":"700",
+        "description": "uka membuat kue di rumah? Berarti Anda sudah akrab, dong, dengan mixer. Benda ini memungkinkan siapa saja mengaduk berbagai bahan hingga membentuk adonan sesuai kecepatan yang ditentukan.",
+        "img": "https://www.electrolux.co.id/globalassets/5-support/blog-id/37.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Rice Cooker",
+        "price": "2800",
+        "orderQuantity":"100",
+        "quantity":"600",
+        "description": "About this item Colour: Red Capacity: 2.7 L Material: Steel Included Components: Electric Cooker, Cooking Pan, Lid, User Manual And Warranty Card | Special Features: Automatic Cut Off Warranty: 1 Year.",
+        "img": "https://m.media-amazon.com/images/I/61SWP8vYgKL.jpg"
+    }
+]
