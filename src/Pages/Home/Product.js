@@ -14,7 +14,7 @@ const Product = ({product}) => {
                     <h5 className='font-bold'>Available Quantity : <small className='text-secondary'>{quantity}</small></h5>
                     <h5 className='font-bold'>Price : <small className='text-secondary'>${price}</small></h5>
                     <div className="card-actions justify-start">
-                        <Link to="purchase"><button className="btn btn-success text-white lowercase px-12">Order Now</button></Link>
+                        <Link to="/purchase"><button className="btn btn-success text-white lowercase px-12">Order Now</button></Link>
                     </div>
                 </div>
             </div>
