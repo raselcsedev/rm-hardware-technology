@@ -5,6 +5,7 @@ const Navbar = () => {
 
     const menuItems = <>
         <li><Link to='/'>Home</Link></li>
+        <li><Link to='allProducts'>All Products</Link></li>
         <li><Link to='blogs'>Blogs</Link></li>
         <li><Link to='portfolio'>PortFolio</Link></li>
         <li><Link to='about'>About</Link></li>
@@ -22,7 +23,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">RM HardWare Technology</a>
+                <Link to="/" className="btn btn-ghost normal-case text-xl">RM HardWare Technology</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
