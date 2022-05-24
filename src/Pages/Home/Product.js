@@ -16,9 +16,9 @@ const Product = ({product}) => {
                     <p>{description}</p>
                     <h5 className='font-bold'>Minimum Order Quantity : <small className='text-secondary '>{orderQuantity}</small></h5>
                     <h5 className='font-bold'>Available Quantity : <small className='text-secondary'>{quantity}</small></h5>
-                    <h5 className='font-bold'>Price : <small className='text-secondary'>${price}</small></h5>
+                    <h5 className='font-bold'>Price : <small className='text-secondary'>${price}/pcs</small></h5>
                     <div className="card-actions justify-start">
-                    <button onClick={()=> navigateToPurchase(_id)} className="btn btn-success text-white lowercase px-12">Order Now</button>
+                    <button onClick={()=> navigateToPurchase(_id)} className="btn btn-success text-white uppercase px-12">Purchase</button>
                         <Link to=""></Link>
                     </div>
                 </div>
