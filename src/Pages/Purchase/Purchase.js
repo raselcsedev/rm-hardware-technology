@@ -19,11 +19,11 @@ const Purchase = () => {
         const order = {
             productImg:product.img,
             productName: product.name,
-            ProductQuantity: event.target.product.value,
-            UserName: user.displayName,
-            UserEmail: user.email,
-            Address: event.target.address.value,
-            Phone: event.target.phone.value,
+            productQuantity: event.target.product.value,
+            userName: user.displayName,
+            userEmail: user.email,
+            address: event.target.address.value,
+            phone: event.target.phone.value,
             
         }
         fetch('http://localhost:5000/order', {
@@ -42,7 +42,6 @@ const Purchase = () => {
 
     return (
         <div className='grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 lg:mx-auto'>
-            <div>
 
                 <div className="card my-5 lg:max-w-lg md:max-w-md sm:max-w-sm mx-auto bg-base-100 shadow-xl">
                     <figure className="px-10 pt-10">
@@ -59,7 +58,6 @@ const Purchase = () => {
                         </div>
                     </div>
                 </div>
-            </div>
 
             <div className="form-control lg:mx-auto max-w-xs">
                 <h2 className='text-2xl lg:text-center font-bold text-accent-focus'>Order Form</h2>
