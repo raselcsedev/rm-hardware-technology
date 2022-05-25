@@ -17,6 +17,7 @@ const Purchase = () => {
     const orderSubmit = (event) => {
         event.preventDefault();
         const order = {
+            productImg:product.img,
             productName: product.name,
             ProductQuantity: event.target.product.value,
             UserName: user.displayName,
@@ -65,13 +66,14 @@ const Purchase = () => {
 
                 <form onSubmit={orderSubmit} className='grid grid-cols-1 gap-3 justify-items-center mt-2' >
                     <div class="form-control gap-3">
+                    
                         <label className="input-group">
                             <span>Product: </span>
                             <input type="text" name="productName" readOnly value={product.name} className="input input-bordered w-full max-w-xs" />
                         </label>
                         <label className="input-group">
                             <span>Quantity:</span>
-                            <input type="text" name="product" placeholder={product.orderQuantity} className="input input-bordered w-full max-w-xs" />
+                            <input type="text" name="product" placeholder={product.orderQuantity}  className="input input-bordered w-full max-w-xs" required />
                         </label>
                     </div>
                     <input type="text" name="name" disabled value={user?.displayName || ''} className="input input-bordered w-full max-w-xs" />
