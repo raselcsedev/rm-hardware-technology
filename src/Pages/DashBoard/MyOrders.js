@@ -1,42 +1,40 @@
 import React, { useEffect, useState } from 'react';
-import MyOrder from './MyOrder';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
+    const [user] = useAuthState(auth);
+
     useEffect(() => {
-        fetch('http://localhost:5000/order')
+        if(user){
+            fetch(`http://localhost:5000/order?userEmail=${user.email}`)
             .then(res => res.json())
             .then(data => setOrders(data))
-    }, [])
+        }
+    }, [user])
     return (
         <div>
-            <h2 className='text-2xl lg:text-center font-bold text-accent-focus'>My Orders</h2>
+            <h2 className='text-2xl mb-2 lg:text-center font-bold text-accent-focus'>My Orders</h2>
             <div class="overflow-x-auto w-full">
                 <table class="table w-full">
                     {/* <!-- head --> */}
                     <thead>
                         <tr>
-                            <th>
-                                <label>
-                                    <input type="checkbox" class="checkbox" />
-                                </label>
-                            </th>
+                            
                             <th>Product</th>
                             <th>User</th>
                             <th>Location</th>
                             <th>Phone</th>
-                            <th></th>
+                            <th>Bill Payment</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
                         {/* <!-- row 1 --> */}
                         {
                             orders.map(order => <tr>
-                                <th>
-                                    <label>
-                                        <input type="checkbox" class="checkbox" />
-                                    </label>
-                                </th>
+                                
                                 <td>
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
@@ -56,9 +54,18 @@ const MyOrders = () => {
                                     <span class="badge badge-ghost badge-sm">{order.userEmail}</span>
                                 </td>
                                 <td>{order.address}</td>
+                                <td>
+                                    {order.phone}
+                                </td>
                                 <th>
-                                    <button class="btn btn-ghost btn-xs">{order.phone}</button>
+                                    <label>
+                                    <button class="btn btn-outline btn-accent  btn-xs">Payment</button>
+                                    <button class="btn btn-outline btn-error ml-2 btn-xs">Cancel</button>
+                                    
+                                    </label>
                                 </th>
+
+
                             </tr>)
                         }
 
