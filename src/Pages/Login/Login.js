@@ -4,6 +4,7 @@ import auth from '../../firebase.init';
 import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import Loading from '../Shared/Loading';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
     const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -14,6 +15,8 @@ const Login = () => {
         loading,
         error,
       ] = useSignInWithEmailAndPassword(auth);
+
+      const [token] = useToken(user || gUser);
       
 
       let signInError;
@@ -26,9 +29,9 @@ const Login = () => {
       };
 
       if(error || gError){
-        signInError= <p className='text-red-500'><small>{error?.message || gError?.message }</small></p>
+        signInError= <p className='text-red-500'><small> {error?.message || gError?.message } </small></p>
     }
-    if(user || gUser){
+    if(token){
         console.log(user || gUser);
         navigate(from, {replace:true});
     };

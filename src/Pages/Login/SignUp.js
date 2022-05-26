@@ -3,7 +3,7 @@ import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfil
 import auth from '../../firebase.init';
 import { useForm } from "react-hook-form";
 import Loading from '../Shared/Loading';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import useToken from '../../hooks/useToken';
 
 const SignUp = () => {
@@ -22,6 +22,8 @@ const SignUp = () => {
 
 
     const navigate = useNavigate();
+    const location = useLocation();
+    const from = location.state?.from?.pathname || "/";
 
     let signInError;
 
@@ -34,7 +36,7 @@ const SignUp = () => {
     }
 
     if (token) {
-        navigate('/home');
+        navigate(from, {replace:true});
         
     }
 
