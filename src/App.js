@@ -29,18 +29,16 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='home' element={<Home></Home>}></Route>
-        <Route path='allProducts' element={<AllProducts></AllProducts>}></Route>
+        <Route path='allProducts' element={<RequireAdmin><AllProducts></AllProducts></RequireAdmin>}></Route>
         <Route path='products' element={<Products></Products>}></Route>
         <Route path='/product/:productId' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
         <Route path='dashboard' element={
           <RequireAuth><DashBoard></DashBoard></RequireAuth>}>
-          <Route index element={<MyOrders></MyOrders>}></Route>
+          <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route path='myOrders' element={<MyOrders></MyOrders>}></Route>
           <Route path='addReview' element={<AddReview></AddReview>}></Route>
           <Route path='allUsers' element={<RequireAdmin><AllUsers></AllUsers></RequireAdmin>}></Route>
           <Route path='addProduct' element={<RequireAdmin><AddProduct></AddProduct></RequireAdmin>}></Route>
-          <Route path='manageOrders' element={<AllUsers></AllUsers>}></Route>
-          <Route path='manageProducts' element={<AllUsers></AllUsers>}></Route>
-          <Route path='myProfile' element={<MyProfile></MyProfile>}></Route>
         </Route>
 
         
