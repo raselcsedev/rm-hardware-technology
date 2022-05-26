@@ -27,6 +27,11 @@ const SignUp = () => {
 
     let signInError;
 
+    if (token) {
+        navigate(from, {replace:true});
+        
+    }
+
     if (loading || gLoading || updating) {
         return <Loading></Loading>
     }
@@ -35,10 +40,7 @@ const SignUp = () => {
         signInError = <p className='text-red-500'><small>{error?.message || gError?.message || updateError?.message}</small></p>
     }
 
-    if (token) {
-        navigate(from, {replace:true});
-        
-    }
+   
 
     const onSubmit = async data => {
         await createUserWithEmailAndPassword(data.email, data.password);

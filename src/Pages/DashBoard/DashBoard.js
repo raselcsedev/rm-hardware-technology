@@ -20,6 +20,10 @@ const DashBoard = () => {
                     {/* <!-- Sidebar content here --> */}
                     <li><Link to="/dashboard">My Orders</Link></li>
                     <li><Link to="/dashboard/addReview">Add Review</Link></li>
+                    <li><Link to="/dashboard/allUsers">All Users</Link></li>
+                    <li><Link to="/dashboard/manageOrders">Manage Orders</Link></li>
+                    <li><Link to="/dashboard/addOrder">Add Order</Link></li>
+                    <li><Link to="/dashboard/manageProducts">Manage Products</Link></li>
                     <li><Link to="/dashboard/myProfile">My Profile</Link></li>
                 </ul>
 

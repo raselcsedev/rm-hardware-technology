@@ -1,13 +1,13 @@
-import { signOut } from 'firebase/auth';
+
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
     const [user] = useAuthState(auth);
-    const navigate = useNavigate();
+    
+    
 
     useEffect(() => {
         if (user) {
@@ -17,26 +17,16 @@ const MyOrders = () => {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
                 }
             })
-                .then(res => {
-                    console.log('res', res);
-                    if (res.status === 401 || res.status === 403) {
-                        signOut(auth);
-                        localStorage.removeItem('accessToken');
-                        navigate('/');
-                    }
-                    return res.json()
-                })
-                .then(data => {
-
-                    setOrders(data)
-                });
+                .then(res => res.json())
+                .then(data => setOrders(data)
+                );
         }
     }, [user])
     return (
-        <div>
-            <h2 className='text-2xl mb-2 lg:text-center font-bold text-accent-focus'>My Orders</h2>
+        <div className='bg-info h-full'>
+            <h2 className='text-2xl mt-5 pb-5 lg:text-center font-bold text-white'>My Orders</h2>
             <div class="overflow-x-auto w-full">
-                <table class="table w-full">
+                <table class="table mx-auto">
                     {/* <!-- head --> */}
                     <thead>
                         <tr>
