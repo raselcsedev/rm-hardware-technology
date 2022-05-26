@@ -1,16 +1,35 @@
+import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
     const [orders, setOrders] = useState([]);
     const [user] = useAuthState(auth);
+    const navigate = useNavigate();
 
     useEffect(() => {
-        if(user){
-            fetch(`http://localhost:5000/order?userEmail=${user.email}`)
-            .then(res => res.json())
-            .then(data => setOrders(data))
+        if (user) {
+            fetch(`http://localhost:5000/order?userEmail=${user.email}`, {
+                method: 'GET',
+                headers: {
+                    'authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                }
+            })
+                .then(res => {
+                    console.log('res', res);
+                    if (res.status === 401 || res.status === 403) {
+                        signOut(auth);
+                        localStorage.removeItem('accessToken');
+                        navigate('/');
+                    }
+                    return res.json()
+                })
+                .then(data => {
+
+                    setOrders(data)
+                });
         }
     }, [user])
     return (
@@ -21,20 +40,20 @@ const MyOrders = () => {
                     {/* <!-- head --> */}
                     <thead>
                         <tr>
-                            
+
                             <th>Product</th>
                             <th>User</th>
                             <th>Location</th>
                             <th>Phone</th>
                             <th>Bill Payment</th>
-                            
+
                         </tr>
                     </thead>
                     <tbody>
                         {/* <!-- row 1 --> */}
                         {
                             orders.map(order => <tr>
-                                
+
                                 <td>
                                     <div class="flex items-center space-x-3">
                                         <div class="avatar">
@@ -59,9 +78,9 @@ const MyOrders = () => {
                                 </td>
                                 <th>
                                     <label>
-                                    <button class="btn btn-outline btn-accent  btn-xs">Payment</button>
-                                    <button class="btn btn-outline btn-error ml-2 btn-xs">Cancel</button>
-                                    
+                                        <button class="btn btn-outline btn-accent  btn-xs">Payment</button>
+                                        <button class="btn btn-outline btn-error ml-2 btn-xs">Cancel</button>
+
                                     </label>
                                 </th>
 
