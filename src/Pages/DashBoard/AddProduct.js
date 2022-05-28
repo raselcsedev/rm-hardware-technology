@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading';
 const AddProduct = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
 
-    /* const { data, isLoading } = useQuery('addProduct', () => fetch('http://localhost:5000/product').then(res => res.json())); */
+    /* const { data, isLoading } = useQuery('addProduct', () => fetch('https://quiet-beach-66273.herokuapp.com/product').then(res => res.json())); */
 
     const imgKey = 'bb53084cbcce0f9904b78c2ba013647a';
 
@@ -33,7 +33,7 @@ const AddProduct = () => {
                     description: data.description,
                     img: img
                 }
-                fetch('http://localhost:5000/product', {
+                fetch('https://quiet-beach-66273.herokuapp.com/product', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

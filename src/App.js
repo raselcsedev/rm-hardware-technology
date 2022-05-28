@@ -21,6 +21,8 @@ import MyProfile from './Pages/DashBoard/MyProfile';
 import AllUsers from './Pages/DashBoard/AllUsers';
 import RequireAdmin from './Pages/Login/RequireAdmin';
 import AddProduct from './Pages/DashBoard/AddProduct';
+import MoreProducts from './Pages/Home/MoreProducts';
+import Payment from './Pages/DashBoard/Payment';
 
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
         <Route path='home' element={<Home></Home>}></Route>
         <Route path='allProducts' element={<RequireAdmin><AllProducts></AllProducts></RequireAdmin>}></Route>
         <Route path='products' element={<Products></Products>}></Route>
+        <Route path='moreProducts' element={<MoreProducts></MoreProducts>}></Route>
         <Route path='/product/:productId' element={<RequireAuth><Purchase></Purchase></RequireAuth>}></Route>
+        <Route path='/payment/:id' element={<RequireAuth><Payment></Payment></RequireAuth>}></Route>
         <Route path='dashboard' element={
           <RequireAuth><DashBoard></DashBoard></RequireAuth>}>
           <Route index element={<MyProfile></MyProfile>}></Route>

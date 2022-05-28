@@ -8,7 +8,7 @@ const Purchase = () => {
     const [product, setProduct] = useState({});
     const [user, loading, error] = useAuthState(auth);
     useEffect(() => {
-        const url = `http://localhost:5000/product/${productId}`;
+        const url = `https://quiet-beach-66273.herokuapp.com/product/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -26,7 +26,7 @@ const Purchase = () => {
             phone: event.target.phone.value,
             
         }
-        fetch('http://localhost:5000/order', {
+        fetch('https://quiet-beach-66273.herokuapp.com/order', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json'

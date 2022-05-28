@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const MyOrders = () => {
@@ -11,7 +12,7 @@ const MyOrders = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`http://localhost:5000/order?userEmail=${user.email}`, {
+            fetch(`https://quiet-beach-66273.herokuapp.com/order?userEmail=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -21,7 +22,12 @@ const MyOrders = () => {
                 .then(data => setOrders(data)
                 );
         }
-    }, [user])
+    }, [user]);
+
+    const navigate = useNavigate();
+    const navigateToPayment = id =>{
+        navigate(`/payment/${id}`)
+    }
     return (
         <div className='bg-info h-full'>
             <h2 className='text-2xl mt-5 pb-5 lg:text-center font-bold text-white'>My Orders</h2>
@@ -68,9 +74,9 @@ const MyOrders = () => {
                                 </td>
                                 <th>
                                     <label>
-                                        <button class="btn btn-outline btn-accent  btn-xs">Payment</button>
-                                        <button class="btn btn-outline btn-error ml-2 btn-xs">Cancel</button>
-
+                                        {(order.price || !order.paid) && <button onClick={()=> navigateToPayment(order._id)} class="btn btn-outline btn-accent  btn-xs">Payment</button>}
+                                        {(order.price || order.paid) &&  <span class="text-accent">Paid</span>}
+                                        
                                     </label>
                                 </th>
 

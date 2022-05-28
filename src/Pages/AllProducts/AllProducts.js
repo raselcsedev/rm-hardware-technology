@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react';
 const AllProducts = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/product')
+        fetch('https://quiet-beach-66273.herokuapp.com/product')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, []);
     const handleDelete = (id) => {
         const delivery = window.confirm('are you sure?');
         if (delivery) {
-            const url = `http://localhost:5000/product/${id}`;
+            const url = `https://quiet-beach-66273.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
