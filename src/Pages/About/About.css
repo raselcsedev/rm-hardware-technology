@@ -1,0 +1,31 @@
+.about{
+    text-align: center;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.image-container{
+    width: 250px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+.about-us{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: rgba(11, 137, 95, 0.936);
+}
+
+@media (max-width:650px) {
+    
+    
+    .about-us{
+        gap: 25px;
+        font-size: small;
+    }
+    
+}
