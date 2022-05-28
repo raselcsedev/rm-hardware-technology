@@ -11,7 +11,7 @@ const AddReview = () => {
             ratings: event.target.ratings.value,
             
         }
-        fetch('http://localhost:5000/review', {
+        fetch('https://quiet-beach-66273.herokuapp.com', {
             method: 'POST',
             headers:{
                 'content-type': 'application/json',

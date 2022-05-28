@@ -27,7 +27,7 @@ const Products = () => {
             }
             </div>
 
-            <div className=''>
+            <div className='w-full mx-auto'>
                 
                 <button onClick={navigateToMoreProducts} className='text-success btn btn-ghost text-center lowercase'>more products ....</button>
             </div>

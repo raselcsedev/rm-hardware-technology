@@ -3,6 +3,10 @@ import React from 'react';
 const Stat = () => {
     return (
         <div className="w-full mt-5 mx-auto stats shadow">
+            <div>
+                <h2 className="text-xl text-success py-2 px-5">"Short Info of Our Parts</h2>
+                <h2 className="text-xl text-success  px-5">According Last Month"</h2>
+            </div>
 
             <div className="stat">
                 <div className="stat-figure text-secondary">
