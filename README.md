@@ -1,8 +1,8 @@
-# Getting Started with My RM HardWare Technology
+# Getting Started with Our RM HardWare Technology
 
 [RM HardWare Technology](https://rm-hardware-technology.web.app/).
 
-## Available Scripts
+## Available Parts
 - Components, Parts of Automobile.
 - The Chassis.
 - The Oil Pan.
@@ -13,7 +13,7 @@
     - i. The steering system, and.
     - ii. Braking system or brakes.
 
-## A Simple, Easy to Remember URL:
+## A Simple, Easy to Remember our Website:
 - A Clear Description of our website,
 - Call to Actions,
 - Contact Information,
