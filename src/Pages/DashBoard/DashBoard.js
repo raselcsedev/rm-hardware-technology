@@ -8,17 +8,17 @@ const DashBoard = () => {
     const [user] = useAuthState(auth)
     const [admin] = useAdmin(user);
     return (
-        <div className="drawer drawer-mobile">
+        <div className="drawer drawer-mobile  ">
             <input id="dashboard-sidebar" type="checkbox" className="drawer-toggle" />
-            <div className="drawer-content ">
-                <h2 className='text-2xl font-bold text-accent-focus'>Welcome to your Dashboard</h2>
+            <div className="drawer-content  ">
+                <h2 className='text-2xl font-bold text-accent-focus '>Welcome to your Dashboard</h2>
 
                 {/* <!-- Page content here --> */}
                 <Outlet></Outlet>
 
 
             </div>
-            <div className="drawer-side">
+            <div className="drawer-side bg-[#112B3C]">
                 <label for="dashboard-sidebar" className="drawer-overlay"></label>
                 <ul className="menu p-4 overflow-y-auto w-52 bg-base-100 text-base-content">
 

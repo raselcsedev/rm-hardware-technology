@@ -3,48 +3,38 @@ import { Link } from 'react-router-dom';
 
 const PortFolio = () => {
     return (
-        <div>
-            <div class="card text-center lg:w-lg bg-base-100 shadow-xl">
-                <div class="card-body">
-                    <div>
-                        <h1 className='text-2xl font-bold'>MD. RASEL AKTAR</h1>
-                        <p className='text-success text-l'>B.Sc. in Computer Science and Engineering</p>
-                        <h1 className='text-xs font-bold text-blue-500'>raselcse.dev@gmail.com</h1>
-                        <p>
-                            <h2 className='text-xl font-bold text-accent mt-5'>Skills</h2> 
-                            Firebase, React Router, React, JSON,
-                            JavaScript, ES6, Tailwind, Bootstrap, CSS3,
-                            HTML5
-                            <h2 className='text-xl font-bold text-accent mt-5'>Tools</h2>
-                            Github, Netlify, Heroku, Firebase Deploy
-                        </p>
-                    </div>
-
-                    <div class="mt-5 justify-start" >
-                
-
-
-                <div className='font-bold'>
-                    <p className='text-success text-l mt-5'>Website Link</p>
-                    <Link to=''>01. Financial Foray - https://stupefied-colden-9dbc28.netlify.app/ </Link> <br />
-                    <Link to=''>02. Laptop Review - https://thriving-lebkuchen-bf4cdc.netlify.app/ </Link> <br />
-                    <Link to=''>03. Good Read - https://zippy-kringle-284804.netlify.app/ </Link>
-                </div>
-                <p className='  mt-5'>I am passionate about things related to HTML5, CSS3,
-                    Bootstrap, Tailwind, JavaScript, React, and Firebase.
-                    Also, a hardworking professional focused on writing
-                    clean codes and learning new things. I am currently
-                    searching for the right opportunity where I can work
-                    in a friendly environment which will not only help me
-                    to progress into full-stack role but also add value to
-                    that organization.
-                </p>
-            </div>
-                </div>
-
-
-            </div>
+        <div className="pb-36 bg-[#114a70]">
             
+
+            <div className="hero-content flex-col w-full justify-around lg:flex-row-reverse">
+                <div
+                    initial={{ opacity: 0, x: 50, scale: 0.9 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className='mask mask-hexagon max-w-sm mb-12 lg:mb-2'
+                >
+                    <img src="images/about.png" alt='me' />
+                </div>
+                <div
+                    initial={{ opacity: 0, x: -50, scale: 0.9 }}
+                    animate={{ opacity: 1, x: 0, scale: 1 }}
+                    transition={{ duration: 1, ease: "easeInOut" }}
+                    className='max-w-2xl text-white'
+                >
+                    <h1 className="text-5xl font-semibold mb-2">Hi! I am <span className='text-orange-600'>Rasel</span> </h1>
+                    <div className="text-2xl text-success font-semibold leading-relaxed mb-5">Front-End Web Developer
+                    <div className='mb-5 lg:mb-0'>
+                        <div className='flex pt-5'>
+                            <a className='lg:ml-0' target='_blank' href="https://github.com/raselcsedev"><img className='hover:scale-110' src="images/icons/github.svg" alt="my GitHub" /></a>
+                            <a className='lg:ml-0' target='_blank' href="https://www.linkedin.com/in/md-rasel-1a9957174/"><img className='hover:scale-110' src="images/icons/linkedin.svg" alt="my LinkedIn" /></a>
+                            <a className='lg:ml-0' target='_blank' href="https://www.facebook.com/raselrezwan001"><img className='hover:scale-110' src="images/icons/facebook.svg" alt="my Facebook" /></a>
+
+                        </div>
+                    </div> 
+                    </div>
+                    {/* <a href={Resume} download="Rasel_Aktar_Resume.pdf"  target="_blank" download className="btn text-white btn-outline">Download Resume</a> */}
+                </div>
+            </div>
         </div>
     );
 };

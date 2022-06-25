@@ -15,9 +15,11 @@ const Products = () => {
         navigate('/moreProducts')
     }
     return (
-        <div className='grid mt-5 justify-center mx-auto w-100'>
-            <h1 className='text-3xl m-3 font-bold text-success text-center'>Featured Products</h1>
-            <div className='grid grid-cols-1'>
+        <div>
+            <h1 className='text-3xl m-3 font-bold text-success text-center uppercase'>Featured Products</h1>
+            <div className='grid mt-5 justify-center mx-auto w-100 bg-[#114a70]'>
+            
+            <div className='grid grid-cols-1 mx-24'>
             {
                 products.slice(0,3).map(product=> <Product
                 key={product._id}
@@ -27,11 +29,12 @@ const Products = () => {
             }
             </div>
 
-            <div className='w-full mx-auto'>
+            <div className='w-full flex justify-end px-24 mb-4'>
                 
-                <button onClick={navigateToMoreProducts} className='text-success btn btn-ghost text-center lowercase'>more products ....</button>
+                <button onClick={navigateToMoreProducts} className='btn btn-ghost outline text-white uppercase'>more products....</button>
             </div>
 
+        </div>
         </div>
     );
 };

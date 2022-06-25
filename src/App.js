@@ -28,7 +28,7 @@ import PortFolio from './Pages/PortFolio/PortFolio';
 
 function App() {
   return (
-    <div className='mx-5'>
+    <div className='mx-5 '>
       <Navbar></Navbar>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

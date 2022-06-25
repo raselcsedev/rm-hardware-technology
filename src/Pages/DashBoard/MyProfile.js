@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const MyProfile = () => {
     return (
-        <div className='bg-info'>
+        <div className='bg-[#114a70]'>
             <h2 className='text-2xl mt-5 pb-5 lg:text-center font-bold text-white'>My Profile</h2>
 
             <div className='p-5'>
